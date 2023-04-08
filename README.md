@@ -1,14 +1,14 @@
 ![Imagem 1](./layout-projeto.png "Imagem 1")
 
-<h1 align="center">API Tweteroo - Node </h1>
+<h1 align="center">API Tweteroo - Node</h1>
 
 ✅ Requisitos
 - Geral
-    - [ ]  A porta utilizada pelo seu servidor deve ser a 5000.
-    - [ ]  Versionamento usando Git é obrigatório, crie um **repositório público** no seu perfil do GitHub **apenas com o código do backend.**
-    - [ ]  Faça commits a cada funcionalidade implementada.
-    - [ ]  Não esqueça de criar o `.gitignore`, a `node_modules` não deve ser commitada.
-    - [ ]  Seu projeto deve ter, obrigatoriamente, os arquivos `package.json` e `package-lock.json`, que devem estar na raiz do projeto. Eles devem conter todas as **dependências** do projeto.
+    - [x]  A porta utilizada pelo seu servidor deve ser a 5000.
+    - [x]  Versionamento usando Git é obrigatório, crie um **repositório público** no seu perfil do GitHub **apenas com o código do backend.**
+    - [x]  Faça commits a cada funcionalidade implementada.
+    - [x]  Não esqueça de criar o `.gitignore`, a `node_modules` não deve ser commitada.
+    - [x]  Seu projeto deve ter, obrigatoriamente, os arquivos `package.json` e `package-lock.json`, que devem estar na raiz do projeto. Eles devem conter todas as **dependências** do projeto.
     - [ ]  Adicione o código que inicia o servidor, com a função `listen`, no arquivo `src/app.js`.
     - [ ]  Adicione um script no `package.json` para iniciar o servidor rodando `npm start` como no exemplo abaixo:
         
