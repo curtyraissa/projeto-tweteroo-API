@@ -7,37 +7,33 @@ const app = express(); //criacao do app servidor
 app.use(cors()); // acessar as portas
 app.use(express.json()); //ler no formato json
 
-const tweetsCompleto = []
+const tweetsCompleto = [
+	{
+		username: "bobesponja",
+		avatar: "https://cdn.shopify.com/s/files/1/0150/0643/3380/files/Screen_Shot_2019-07-01_at_11.35.42_AM_370x230@2x.png",
+		tweet: "Eu amo hambúrguer de siri!"
+	}
+]
+app.get("/tweets", (request, response) => {
+  // const { username } = request.params  //const username = request.params.username
+  // const tweet = tweetsCompleto.find((item) => item.username === username)
+  response.send(tweetsCompleto)
+})
 
 const usuarios = []
 app.post("/sign-up", (request, response) => {
-
-  const {username, avatar} = request.body
-  const novoUsuario = {
-    username: username,
-    avatar: avatar
-  }
+  const { username, avatar } = request.body
+  const novoUsuario = { username, avatar }
   usuarios.push(novoUsuario)
   response.send("OK")
 })
 
 const tweets = []
-app.post("/tweets", (request,response) => {
-  const {username, tweet} = request.body
-  const novoTweet = {
-    username: username,
-    tweet: tweet
-  }
+app.post("/tweets", (request, response) => {
+  const { username, tweet } = request.body
+  const novoTweet = { username, tweet }
   tweets.push(novoTweet);
   response.send("OK");
-  }
-)
-
-
-app.get("/tweets", (request, response) => {
-  const {username} = request.params
-  // const username = request.params.username
-    response.send(tweetsCompleto)
 })
 
 const PORT = 5000;
