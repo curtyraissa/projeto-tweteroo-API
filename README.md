@@ -1,4 +1,4 @@
-![Imagem 1](./layout-projeto.mov "Imagem 1")
+![Imagem 1](./layout-projeto.png "Imagem 1")
 
 <h1 align="center">API Tweteroo - Node</h1>
 
@@ -82,7 +82,7 @@
         ```
         
     - Repare que a informação “avatar” **não vem** da requisição **POST** de `/tweets`. Para retornar o “avatar” na requisição **get** de `/tweets`, você vai precisar obtê-lo de outra forma.
-    - [ ]  Caso não tenha nenhum tweet cadastrado, retorna um array vazio.
+    - [x]  Caso não tenha nenhum tweet cadastrado, retorna um array vazio.
 <hr/>
 
 ## 🛠 &nbsp;Skills
