@@ -9,8 +9,8 @@
     - [x]  Faça commits a cada funcionalidade implementada.
     - [x]  Não esqueça de criar o `.gitignore`, a `node_modules` não deve ser commitada.
     - [x]  Seu projeto deve ter, obrigatoriamente, os arquivos `package.json` e `package-lock.json`, que devem estar na raiz do projeto. Eles devem conter todas as **dependências** do projeto.
-    - [ ]  Adicione o código que inicia o servidor, com a função `listen`, no arquivo `src/app.js`.
-    - [ ]  Adicione um script no `package.json` para iniciar o servidor rodando `npm start` como no exemplo abaixo:
+    - [x]  Adicione o código que inicia o servidor, com a função `listen`, no arquivo `src/app.js`.
+    - [x]  Adicione um script no `package.json` para iniciar o servidor rodando `npm start` como no exemplo abaixo:
         
         ```json
         // package.json
