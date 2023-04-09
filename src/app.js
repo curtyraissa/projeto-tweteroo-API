@@ -21,20 +21,31 @@ app.post("/tweets", (request, response) => {
   const { username, tweet } = request.body
   const novoTweet = { username, tweet }
   const cadastrado = usuarios.find(item => item.username === username)
+
+
+
   if(cadastrado){
   tweets.push(novoTweet);
   response.send("OK");
+
   } else { response.send("UNAUTHORIZED")}
 })
 
-app.get("/tweets/:username", (request, response) => {
-  const { username } = request.params
-  const tweetsCompleto = tweets.find((item) => {
-    if(item.username === username){
-      return item.avatar
+app.get("/tweets/", (request, response) => {
+
+  if(tweets.length == 0){
+    response.send([])
+  } else {
+    const dezTweets = tweets.slice(-10)
+    const tweetsCompleto = dezTweets.map((item) => {
+      const usuario = usuarios.find(usuario => usuario.username == item.username)
+    return {
+      ...item,
+      avatar: usuario.avatar
     }
-  })
-  response.status(200).send(tweetsCompleto)
+    })
+    response.send(tweetsCompleto)
+  }
 })
 
 //rodando servidor na porta 5000
