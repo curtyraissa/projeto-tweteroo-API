@@ -1,4 +1,4 @@
-![Imagem 1](./layout-projeto.png "Imagem 1")
+![Imagem 1](./layout-projeto.mov "Imagem 1")
 
 <h1 align="center">API Tweteroo - Node</h1>
 
@@ -24,8 +24,8 @@
         ```
         
 - Armazenamento e formato dos dados
-    - [ ]  Para persistir os dados (usuários e tweets), **utilize variáveis globais em memória.**
-    - [ ]  O formato de um **usuário** deve ser:
+    - [x]  Para persistir os dados (usuários e tweets), **utilize variáveis globais em memória.**
+    - [x]  O formato de um **usuário** deve ser:
         
         ```jsx
         {
@@ -34,7 +34,7 @@
         }
         ```
         
-    - [ ]  O formato de um **tweet** deve ser:
+    - [x]  O formato de um **tweet** deve ser:
         
         ```jsx
         {
@@ -44,7 +44,7 @@
         ```
         
 - **POST** `/sign-up`
-    - [ ]  Deve receber (pelo `body` da request), um parâmetro **username** e um **avatar**, contendo o nome do username do usuário e a sua foto de avatar:
+    - [x]  Deve receber (pelo `body` da request), um parâmetro **username** e um **avatar**, contendo o nome do username do usuário e a sua foto de avatar:
         
         ```jsx
         {
@@ -53,11 +53,11 @@
         }
         ```
         
-    - [ ]  Salvar esse usuário num array de usuários do servidor.
-    - [ ]  Por fim, retornar a mensagem `“OK”`.
+    - [x]  Salvar esse usuário num array de usuários do servidor.
+    - [x]  Por fim, retornar a mensagem `“OK”`.
 - **POST** `/tweets`
-    - [ ]  Se o usuário não estiver cadastrado (username não fez `sign-up` anteriormente), deve retornar a mensagem `“UNAUTHORIZED”`.
-    - [ ]  Deve receber (pelo `body` da request), os parâmetros `username` e `tweet`:
+    - [x]  Se o usuário não estiver cadastrado (username não fez `sign-up` anteriormente), deve retornar a mensagem `“UNAUTHORIZED”`.
+    - [x]  Deve receber (pelo `body` da request), os parâmetros `username` e `tweet`:
         
         ```jsx
         {
@@ -66,10 +66,10 @@
         }
         ```
         
-    - [ ]  Salvar esse tweet num array de tweets do servidor.
-    - [ ]  Por fim, retornar a mensagem `“OK”`.
+    - [x]  Salvar esse tweet num array de tweets do servidor.
+    - [x]  Por fim, retornar a mensagem `“OK”`.
 - **GET** `/tweets`
-    - [ ]  Retornar os 10 últimos tweets publicados
+    - [x]  Retornar os 10 últimos tweets publicados
         
         ```jsx
         [
@@ -98,7 +98,6 @@
 
 ## 🚀 &nbsp;Links
 
-- [Figma]().<br/>
 - [Deploy]().<br/>
 
 <hr/>
